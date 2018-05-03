@@ -7,5 +7,5 @@ def application(env, start_response):
         ('Access-Control-Allow-Origin', '*'),
         ('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type')
     ])
-    res = urllib2.urlopen('https://wtfismyip.com/text').read()
+    res = urllib2.urlopen('https://wtfismyip.com/json').read()
     return [res]
